@@ -1,24 +1,11 @@
-|KeyboardController
-ps2_clk => previous_keycode[0].CLK
-ps2_clk => previous_keycode[1].CLK
-ps2_clk => previous_keycode[2].CLK
-ps2_clk => previous_keycode[3].CLK
-ps2_clk => previous_keycode[4].CLK
-ps2_clk => previous_keycode[5].CLK
-ps2_clk => previous_keycode[6].CLK
-ps2_clk => previous_keycode[7].CLK
-ps2_clk => previous_keycode[8].CLK
-ps2_clk => previous_keycode[9].CLK
-ps2_clk => previous_keycode[10].CLK
-ps2_clk => previous_keycode[11].CLK
-ps2_clk => code[0]~reg0.CLK
-ps2_clk => code[1]~reg0.CLK
-ps2_clk => code[2]~reg0.CLK
-ps2_clk => code[3]~reg0.CLK
-ps2_clk => code[4]~reg0.CLK
-ps2_clk => code[5]~reg0.CLK
-ps2_clk => code[6]~reg0.CLK
-ps2_clk => code[7]~reg0.CLK
+|KeyboardController_testbench
+
+
+|KeyboardController_testbench|KeyboardController:UUT
+ps2_clk => pos[0].CLK
+ps2_clk => pos[1].CLK
+ps2_clk => pos[2].CLK
+ps2_clk => pos[3].CLK
 ps2_clk => counter[0].CLK
 ps2_clk => counter[1].CLK
 ps2_clk => counter[2].CLK
@@ -31,14 +18,7 @@ ps2_clk => keycode[4].CLK
 ps2_clk => keycode[5].CLK
 ps2_clk => keycode[6].CLK
 ps2_clk => keycode[7].CLK
-ps2_clk => keycode[8].CLK
-ps2_clk => keycode[9].CLK
-ps2_clk => keycode[10].CLK
-ps2_clk => keycode[11].CLK
-data => keycode.DATAB
-data => keycode.DATAB
-data => keycode.DATAB
-data => keycode.DATAB
+ps2_clk => last.CLK
 data => keycode.DATAB
 data => keycode.DATAB
 data => keycode.DATAB

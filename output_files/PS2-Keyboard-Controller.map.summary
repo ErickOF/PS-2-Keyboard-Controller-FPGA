@@ -1,17 +1,12 @@
-Analysis & Synthesis Status : Successful - Fri Nov 15 23:16:23 2019
+Analysis & Elaboration Status : Successful - Sat Nov 16 00:48:41 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : PS2-Keyboard-Controller
-Top-level Entity Name : KeyboardController
+Top-level Entity Name : KeyboardController_testbench
 Family : Cyclone V
-Logic utilization (in ALMs) : N/A
-Total registers : 36
-Total pins : 10
-Total virtual pins : 0
-Total block memory bits : 0
-Total DSP Blocks : 0
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
-Total HSSI TX PCSs : 0
-Total HSSI PMA TX Serializers : 0
-Total PLLs : 0
-Total DLLs : 0
+Logic utilization (in ALMs) : N/A until Partition Merge
+Total registers : N/A until Partition Merge
+Total pins : N/A until Partition Merge
+Total virtual pins : N/A until Partition Merge
+Total block memory bits : N/A until Partition Merge
+Total PLLs : N/A until Partition Merge
+Total DLLs : N/A until Partition Merge
