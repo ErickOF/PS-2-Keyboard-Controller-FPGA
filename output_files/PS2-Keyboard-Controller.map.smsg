@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at KeyboardController.sv(38): always construct contains both blocking and non-blocking assignments File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardController.sv Line: 38
