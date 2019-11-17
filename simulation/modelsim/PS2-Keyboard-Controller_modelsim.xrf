@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardController.sv
+source_file = 1, C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardController_testbench.sv
+source_file = 1, C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv
+source_file = 1, C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/db/PS2-Keyboard-Controller.cbx.xml
+design_name = KeyboardDisplay
+instance = comp, \leds[0]~output , leds[0]~output, KeyboardDisplay, 1
+instance = comp, \leds[1]~output , leds[1]~output, KeyboardDisplay, 1
+instance = comp, \leds[2]~output , leds[2]~output, KeyboardDisplay, 1
+instance = comp, \leds[3]~output , leds[3]~output, KeyboardDisplay, 1
+instance = comp, \leds[4]~output , leds[4]~output, KeyboardDisplay, 1
+instance = comp, \clk~input , clk~input, KeyboardDisplay, 1
+instance = comp, \ps2_clk~input , ps2_clk~input, KeyboardDisplay, 1
+instance = comp, \data~input , data~input, KeyboardDisplay, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, KeyboardDisplay, 1

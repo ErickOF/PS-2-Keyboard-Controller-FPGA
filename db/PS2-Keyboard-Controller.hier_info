@@ -1,7 +1,15 @@
-|KeyboardController_testbench
+|KeyboardDisplay
+clk => ~NO_FANOUT~
+ps2_clk => KeyboardController:KC.ps2_clk
+data => KeyboardController:KC.data
+leds[0] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] << leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|KeyboardController_testbench|KeyboardController:UUT
+|KeyboardDisplay|KeyboardController:KC
 ps2_clk => pos[0].CLK
 ps2_clk => pos[1].CLK
 ps2_clk => pos[2].CLK
