@@ -16,6 +16,12 @@ deco2[3] << Decoder:D2.out[3]
 deco2[4] << Decoder:D2.out[4]
 deco2[5] << Decoder:D2.out[5]
 deco2[6] << Decoder:D2.out[6]
+leds[0] << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] << Equal1.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] << Equal2.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] << Equal3.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] << leds.DB_MAX_OUTPUT_PORT_TYPE
+leds[5] << <GND>
 
 
 |KeyboardDisplay|KeyboardController:KC
