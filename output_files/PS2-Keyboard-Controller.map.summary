@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Sun Nov 17 16:08:06 2019
+Analysis & Synthesis Status : Successful - Tue Nov 19 15:51:25 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : PS2-Keyboard-Controller
 Top-level Entity Name : KeyboardDisplay
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 8
+Total registers : 27
+Total pins : 17
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

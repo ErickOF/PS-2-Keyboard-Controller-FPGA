@@ -31,13 +31,12 @@ module KeyboardController(input  logic       ps2_clk,
                           output logic [7:0] code);
 
 logic [7:0] keycode, previous_keycode;
-logic [3:0] counter, pos;
+logic [3:0] counter;
 logic       last;
 
 // Init variables
 initial begin
     counter <= 4'h1;
-	 pos <= 4'b0;
     last <= 1'b0;
     keycode <= 8'hf0;
     previous_keycode <= 8'hf0;
@@ -49,7 +48,14 @@ always @(negedge ps2_clk) begin
         // Bit 1 - Start
         1:;
         // Bit 2-9 - Info
-        2, 3, 4, 5, 6, 7, 8, 9: keycode[pos] <= data;
+        2: keycode[0] <= data;
+		  3: keycode[1] <= data;
+		  4: keycode[2] <= data;
+		  5: keycode[3] <= data;
+		  6: keycode[4] <= data;
+		  7: keycode[5] <= data;
+		  8: keycode[6] <= data;
+		  9: keycode[7] <= data;
         // Bit 10 - Parity
         10:    last <= 1'b1;
         // Bit 11 - End
@@ -58,11 +64,8 @@ always @(negedge ps2_clk) begin
 
     if (counter <= 10)
         counter <= counter + 4'b1;
-		  if (counter >= 2)
-		      pos <= pos + 4'b1;
     else if (counter == 11)
         counter <= 4'b1;
-		  pos <= 4'b0;
 end
 
 // Save bits

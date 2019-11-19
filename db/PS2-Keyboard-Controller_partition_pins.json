@@ -2,7 +2,72 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "deco1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "deco1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "deco2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_clk",
+					"strict" : false
+				},
+				{
+					"name" : "data",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
