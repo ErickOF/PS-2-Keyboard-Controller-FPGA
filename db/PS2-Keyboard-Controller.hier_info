@@ -1,27 +1,25 @@
 |KeyboardDisplay
-clk => ~NO_FANOUT~
 ps2_clk => KeyboardController:KC.ps2_clk
 data => KeyboardController:KC.data
-deco1[0] << Decoder:D1.out[0]
-deco1[1] << Decoder:D1.out[1]
-deco1[2] << Decoder:D1.out[2]
-deco1[3] << Decoder:D1.out[3]
-deco1[4] << Decoder:D1.out[4]
-deco1[5] << Decoder:D1.out[5]
-deco1[6] << Decoder:D1.out[6]
-deco2[0] << Decoder:D2.out[0]
-deco2[1] << Decoder:D2.out[1]
-deco2[2] << Decoder:D2.out[2]
-deco2[3] << Decoder:D2.out[3]
-deco2[4] << Decoder:D2.out[4]
-deco2[5] << Decoder:D2.out[5]
-deco2[6] << Decoder:D2.out[6]
-leds[0] << Equal0.DB_MAX_OUTPUT_PORT_TYPE
-leds[1] << Equal1.DB_MAX_OUTPUT_PORT_TYPE
-leds[2] << Equal2.DB_MAX_OUTPUT_PORT_TYPE
-leds[3] << Equal3.DB_MAX_OUTPUT_PORT_TYPE
-leds[4] << leds.DB_MAX_OUTPUT_PORT_TYPE
-leds[5] << <GND>
+deco1[0] <= Decoder:D1.out[0]
+deco1[1] <= Decoder:D1.out[1]
+deco1[2] <= Decoder:D1.out[2]
+deco1[3] <= Decoder:D1.out[3]
+deco1[4] <= Decoder:D1.out[4]
+deco1[5] <= Decoder:D1.out[5]
+deco1[6] <= Decoder:D1.out[6]
+deco2[0] <= Decoder:D2.out[0]
+deco2[1] <= Decoder:D2.out[1]
+deco2[2] <= Decoder:D2.out[2]
+deco2[3] <= Decoder:D2.out[3]
+deco2[4] <= Decoder:D2.out[4]
+deco2[5] <= Decoder:D2.out[5]
+deco2[6] <= Decoder:D2.out[6]
+leds[0] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+leds[1] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+leds[2] <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+leds[3] <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+leds[4] <= leds.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |KeyboardDisplay|KeyboardController:KC

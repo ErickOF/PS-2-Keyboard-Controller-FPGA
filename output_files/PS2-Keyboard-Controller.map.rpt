@@ -1,5 +1,5 @@
 Analysis & Synthesis report for PS2-Keyboard-Controller
-Tue Nov 19 16:25:36 2019
+Wed Nov 20 10:22:31 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -45,14 +45,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 19 16:25:36 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 20 10:22:31 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; PS2-Keyboard-Controller                     ;
 ; Top-level Entity Name           ; KeyboardDisplay                             ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 29                                          ;
-; Total pins                      ; 23                                          ;
+; Total pins                      ; 21                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -165,8 +165,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -197,14 +196,14 @@ refer to the applicable agreement for further details.
 ;                                             ;                            ;
 ; Dedicated logic registers                   ; 29                         ;
 ;                                             ;                            ;
-; I/O pins                                    ; 23                         ;
+; I/O pins                                    ; 21                         ;
 ;                                             ;                            ;
 ; Total DSP Blocks                            ; 0                          ;
 ;                                             ;                            ;
 ; Maximum fan-out node                        ; KeyboardController:KC|last ;
 ; Maximum fan-out                             ; 17                         ;
-; Total fan-out                               ; 274                        ;
-; Average fan-out                             ; 2.47                       ;
+; Total fan-out                               ; 272                        ;
+; Average fan-out                             ; 2.54                       ;
 +---------------------------------------------+----------------------------+
 
 
@@ -213,7 +212,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name        ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------+--------------+
-; |KeyboardDisplay           ; 36 (7)              ; 29 (0)                    ; 0                 ; 0          ; 23   ; 0            ; |KeyboardDisplay                       ; KeyboardDisplay    ; work         ;
+; |KeyboardDisplay           ; 36 (7)              ; 29 (0)                    ; 0                 ; 0          ; 21   ; 0            ; |KeyboardDisplay                       ; KeyboardDisplay    ; work         ;
 ;    |Decoder:D1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|Decoder:D1            ; Decoder            ; work         ;
 ;    |Decoder:D2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|Decoder:D2            ; Decoder            ; work         ;
 ;    |KeyboardController:KC| ; 15 (15)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|KeyboardController:KC ; KeyboardController ; work         ;
@@ -284,18 +283,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; arriav_ff             ; 29                          ;
 ;     ENA               ; 16                          ;
 ;     plain             ; 13                          ;
-; arriav_lcell_comb     ; 51                          ;
-;     normal            ; 51                          ;
-;         0 data inputs ; 1                           ;
+; arriav_lcell_comb     ; 50                          ;
+;     normal            ; 50                          ;
 ;         1 data inputs ; 14                          ;
 ;         3 data inputs ; 7                           ;
 ;         4 data inputs ; 16                          ;
 ;         5 data inputs ; 5                           ;
 ;         6 data inputs ; 8                           ;
-; boundary_port         ; 23                          ;
+; boundary_port         ; 21                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.57                        ;
+; Average LUT depth     ; 1.59                        ;
 +-----------------------+-----------------------------+
 
 
@@ -314,7 +312,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 16:25:24 2019
+    Info: Processing started: Wed Nov 20 10:22:17 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off PS2-Keyboard-Controller -c PS2-Keyboard-Controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -327,24 +325,19 @@ Info (12021): Found 1 design units, including 1 entities, in source file keyboar
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
     Info (12023): Found entity 1: Decoder File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/Decoder.sv Line: 1
 Info (12127): Elaborating entity "KeyboardDisplay" for the top level hierarchy
-Warning (10034): Output port "leds[5]" at KeyboardDisplay.sv(5) has no driver File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 5
-Info (12128): Elaborating entity "KeyboardController" for hierarchy "KeyboardController:KC" File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 13
-Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 15
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 5
+Info (12128): Elaborating entity "KeyboardController" for hierarchy "KeyboardController:KC" File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 12
+Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 14
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 1 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/ErickOF/Documents/Git/PS-2-Keyboard-Controller/KeyboardDisplay.sv Line: 1
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 3 input pins
-    Info (21059): Implemented 20 output pins
+Info (21057): Implemented 73 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 19 output pins
     Info (21061): Implemented 52 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4849 megabytes
-    Info: Processing ended: Tue Nov 19 16:25:36 2019
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Wed Nov 20 10:22:31 2019
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:26
 
 

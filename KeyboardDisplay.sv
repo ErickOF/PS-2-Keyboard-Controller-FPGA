@@ -1,8 +1,7 @@
-module KeyboardDisplay(input  logic clk,
-                       input  logic ps2_clk,
+module KeyboardDisplay(input  logic ps2_clk,
                        input  logic data,
                        output logic [6:0] deco1, deco2,
-							  output logic [5:0] leds);
+							  output logic [4:0] leds);
 
 logic      [7:0] keycode = 0;
 localparam [7:0] W = 8'h1D;
